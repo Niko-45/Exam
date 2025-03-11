@@ -591,6 +591,9 @@ input {
   .section-part_div button {
     width: 100%;
   }
+  .heder-nav_text {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
@@ -628,6 +631,9 @@ input {
 
   input {
     padding: 10px 5px;
+  }
+  .heder-nav_text {
+    display: none;
   }
 }
 

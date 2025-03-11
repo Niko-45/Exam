@@ -16,11 +16,7 @@ export default function App() {
     return () => window.removeEventListener("resize", checkMobile)
   }, [])
 
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setMenuOpen(false)
-  }
+ 
 
   return (
     <>
@@ -31,18 +27,7 @@ export default function App() {
               <img src="./src/assets/image/img (39).png" alt="Logo" />
             </div>
             <div
-              className={`heder-nav_text ${menuOpen ? "mobile-menu-open" : ""}`}
-              style={{
-                display: isMobile ? (menuOpen ? "flex" : "none") : "flex",
-                flexDirection: isMobile ? "column" : "row",
-                position: isMobile ? "absolute" : "static",
-                top: isMobile ? "70px" : "auto",
-                left: isMobile ? "0" : "auto",
-                width: isMobile ? "100%" : "auto",
-                backgroundColor: isMobile ? "rgba(0, 0, 0, 0.9)" : "transparent",
-                padding: isMobile ? "20px" : "0",
-                zIndex: isMobile ? "10" : "auto",
-              }}
+              className={`heder-nav_text`}
             >
               <p>Кто мы?</p>
               <p>Услуги</p>
@@ -55,7 +40,7 @@ export default function App() {
                 className="menu"
                 src="/src/assets/image/Group 929.png"
                 alt="Menu"
-                onClick={toggleMenu}
+  
                 style={{ cursor: "pointer" }}
               />
             </div>
