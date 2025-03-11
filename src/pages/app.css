@@ -95,7 +95,6 @@ section {
 .section-main_div,
 .section-hero_div,
 .section-about_main,
-.section-business_div,
 .section-result_div,
 .section-payment_div,
 .info,
@@ -107,7 +106,12 @@ section {
   gap: 30px;
   flex-wrap: wrap;
 }
-
+.section-business_div{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 .main-div_info,
 .main-div_img {
   flex: 1;
@@ -120,10 +124,9 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1;
-  min-width: 250px;
+  min-width: 300px;
 }
 
-.
 
 .card-group2 {
   width: 30%;
@@ -218,20 +221,17 @@ section {
   min-width: 300px;
 }
 
-/* Business Section */
 .section-business-div_img {
   width: 100%;
   margin: 30px 0;
   text-align: center;
 }
 
-/* Accelerator Section */
 .padding {
   padding: 15px 20px;
   margin: 10px 0;
 }
 
-/* Partners Section */
 .section-partners {
   background-image: url("/src/assets/image/img (18).png");
   background-repeat: no-repeat;
@@ -276,13 +276,10 @@ section {
 .div_img img {
   width: 40%;
   max-width: 150px;
-  filter: brightness(1.2);
-  transition: transform 0.3s ease;
+
 }
 
 
-
-/* Payment Section */
 .div-pay {
   flex: 1;
   min-width: 280px;
@@ -344,7 +341,6 @@ section {
 }
 
 
-/* Be Partner Section */
 .section_be-partner {
   background-image: url("/src/assets/image/img (42).png");
   background-repeat: no-repeat;
@@ -374,7 +370,6 @@ section {
   text-align: center;
 }
 
-/* Event Section */
 .event_card {
   flex: 1;
   min-width: 280px;
@@ -392,13 +387,11 @@ section {
   object-fit: cover;
 }
 
-/* Menu Icon */
 .menu {
   display: none;
   cursor: pointer;
 }
 
-/* Contact Section */
 .section-contact {
   background-image: url("/src/assets/image/img (18).png");
   background-repeat: no-repeat;
@@ -471,6 +464,11 @@ input {
 .footer-part .header_nav {
   position: relative;
   z-index: 2;
+}
+.user-img{
+  box-shadow: none;
+  width: 20%;
+  min-width: 200px;
 }
 @media (max-width: 1024px) {
   .header-div_card,

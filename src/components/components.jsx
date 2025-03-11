@@ -61,6 +61,27 @@ export function Group({ textCol, img, col, title, text, name = false, w, mg }) {
     </div>
   )
 }
+export function Group2({ textCol, img, col, title, text, name = false, w, mg }) {
+  return (
+    <div
+      className={"user-img"}
+      style={{
+        background: col,
+        width: w,
+        borderRadius: "20px",
+        textAlign: "center",
+        margin: mg,
+        maxWidth: "100%", // Ensure it doesn't overflow
+      }}
+    >
+      <img src={img || "/placeholder.svg"} alt="img..." className="responsive-image" />
+      <p style={{ color: textCol }}>
+        <b>{title}</b>
+      </p>
+      <p>{text}</p>
+    </div>
+  )
+}
 
 export function Select({ name, title, text, img, alt }) {
   return (

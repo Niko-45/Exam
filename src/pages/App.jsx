@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Button, Card, Group, Select, Info, Event, BlueText, CardInfo } from "../components/components"
+import { Button, Card, Group, Select, Info, Event, BlueText, CardInfo, Group2 } from "../components/components"
 import "./app.css"
 
 export default function App() {
@@ -526,32 +526,30 @@ export default function App() {
         </div>
         <BlueText>Эксперты и трекеры программы</BlueText>
         <div className="user-about">
-          <img src="/src/assets/image/img (21).png" alt="img..." />
-          <Group
+          <Group2
             img="/src/assets/image/img (22).png"
             title="Юрий Ким"
             text="Проведение исследования целевой аудитории позволит сформировать Product market fit"
-            name={true}
+            className="user-img"
           />
-          <Group
+          <Group2
             img="/src/assets/image/img (23).png"
             title="Эшли Абрамс"
             text="Проведение исследования целевой аудитории позволит сформировать Product market fit"
-            name={true}
+            className="user-img"
           />
-          <Group
+          <Group2
             img="/src/assets/image/img (24).png"
             title="Фатими Юсуф"
             text="Проведение исследования целевой аудитории позволит сформировать Product market fit"
-            name={true}
+            className="user-img"
           />
-          <Group
+          <Group2
             img="/src/assets/image/img (26).png"
             title="Майкл Донован"
             text="Проведение исследования целевой аудитории позволит сформировать Product market fit"
-            name={true}
+            className="user-img"
           />
-          <img src="/src/assets/image/img (21).png" alt="img..." />
         </div>
         <BlueText>Наши партнеры</BlueText>
         <div className="partners">
