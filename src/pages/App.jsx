@@ -27,7 +27,7 @@ export default function App() {
               <img src="./src/assets/image/img (39).png" alt="Logo" />
             </div>
             <div
-              className={`heder-nav_text`}
+              className="heder-nav_text"
             >
               <p>Кто мы?</p>
               <p>Услуги</p>
@@ -114,7 +114,7 @@ export default function App() {
           btn="Получить консультацию"
           btnCol={true}
           t="center"
-          w={isMobile ? "90%" : "45%"}
+          
           name="section-next_card fade-in"
         />
       </section>
@@ -354,7 +354,7 @@ export default function App() {
         <div className="section-partners_div">
           <Card
             h1="Попадите на радары инвесторов и партнеров"
-            w={isMobile ? "90%" : "40%"}
+           
             p="В результате прохождения обучения мы создадим профили вашей компании на всех международных скаутинговых площадках"
             btn="Записаться в акселератор"
             name="fade-in"
@@ -557,7 +557,6 @@ export default function App() {
           btn="Стать партнером"
           btnCol={true}
           t="center"
-          w={isMobile ? "90%" : "45%"}
         />
       </section>
 

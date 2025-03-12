@@ -470,6 +470,13 @@ input {
   width: 20%;
   min-width: 200px;
 }
+.fade-in {
+  width:45%;
+}
+.section-partners_div {
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1024px) {
   .header-div_card,
   .section-next_card {
@@ -546,6 +553,9 @@ input {
   .section-contact_div {
     width: 100%;
   }
+  .fade-in {
+    width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -613,7 +623,7 @@ input {
 
   .user-images img,
   .partners img {
-    width: 100%;
+
     margin-bottom: 15px;
   }
 
